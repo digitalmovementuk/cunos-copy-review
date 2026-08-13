@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cunos Consulting — hero, H2 and H3 review — Digital Movement</title>
+<meta name="description" content="Cunos Consulting — hero, H2 and H3 review">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230071E3'/%3E%3Ctext x='8' y='12' font-size='11' font-family='Helvetica' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/process.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Cunos Consulting × Digital Movement</p>
+    <h1>Cunos Consulting — hero, H2 and H3 review</h1>
+    
+    <span class="fidelity-tag">Mid-fi · internal</span>
+  </div>
+</header>
+<main>
+<p><strong>Open the review link we sent you.</strong> Nothing to install, nothing to sign into. Your edits save themselves as you type — to your own browser first, and to our server a second later, so a closed tab or a flat battery costs nothing.</p>
+<p>One page to read and rewrite every headline on cunos.co.uk. Built 13 August 2026.</p>
+<p>There is also a single-file copy, <code>hero-h2-review.html</code>, that works with no internet connection at all. It keeps edits in that one browser only, so it is the offline fallback rather than the normal way in.</p>
+<h2 id="what-is-in-it">What is in it</h2>
+<p>All four pages the site has — the homepage and the three service pages — and for each of them, in the order they appear as you scroll:</p>
+<ul>
+<li>the small line above the big headline</li>
+<li>the big headline itself</li>
+<li>the paragraph under it</li>
+<li>every section heading (H2) with the small line above it</li>
+<li>every sub-heading (H3) beneath those</li>
+</ul>
+<p><strong>170 boxes in all</strong>, made up of 224 lines: 50 section headings and 59 sub-headings.</p>
+<p>Sub-headings are here because Google's own guidance, and the Yoast checker this tool runs, treat an H3 exactly like an H2. Leaving them out would have set a target you could not reach from inside the tool.</p>
+<p>Under each section heading there is a paragraph in grey. That is the first paragraph of the section, shown so you can judge whether the heading still matches what the section goes on to say. It is there to read, not to edit.</p>
+<h2 id="where-the-words-came-from">Where the words came from</h2>
+<p>Read off the live site, <code>https://cunos.co.uk</code>, on 13 August 2026 — the copy as it actually appears on screen, not a document about it.</p>
+<p>That is less obvious than it sounds. Cunos is a React site: the file the server sends is empty, and every word is written in by the browser a moment later. So the pages were opened in a real browser and read from there. Anything else would have come back blank.</p>
+<p>Every one of the 224 lines was then traced back to the file that has to change for the edit to survive the next time the site is rebuilt. <strong>224 of 224 were found</strong> — nothing on the site is copy the source cannot account for.</p>
+<div class="table-scroll"><table>
+<thead><tr>
+<th>Lines</th>
+<th>Lives in</th>
+</tr></thead>
+<tbody>
+<tr><td>43</td><td><code>src/App.tsx</code> — the homepage and the footer</td></tr>
+<tr><td>52</td><td><code>src/services/SeniorFinanceSupport.tsx</code></td></tr>
+<tr><td>64</td><td><code>src/services/CashflowForecast.tsx</code></td></tr>
+<tr><td>65</td><td><code>src/services/ManagementReport.tsx</code></td></tr>
+</tbody></table></div>
+<p>Three of them — the opening paragraph on each service page — are written across several lines in the file. The tool says so under the box, because searching the file for the sentence as one line will not find it.</p>
+<h2 id="why-a-headline-is-split-into-several-boxes">Why a headline is split into several boxes</h2>
+<p>Because that is how the site was written. Cunos headlines are built from parts that fade in one after another, and each part is its own piece of text in the source. So "Ready for clearer finance control?" arrives here as four boxes.</p>
+<p>Above them the tool shows <strong>reads as</strong> — the whole heading as one sentence, updating as you type. Edit the boxes; read the sentence.</p>
+<h2 id="what-it-will-not-let-you-do">What it will not let you do</h2>
+<p>Press <strong>SEO rules</strong> in the top bar for the full table. In short, each box refuses characters past a cap: a big headline stops at 60, a section heading at 70, a sub-heading at 65, a small kicker line at 45, an opening paragraph at 320. A line that is already over its cap can only be shortened, and "revert this line" always puts the original back.</p>
+<p>Yoast does not measure the length of a heading at all, so those numbers are ours: 60 characters is the budget Yoast gives a page title. The rules table says, per limit, whose number it is.</p>
+<p><strong>Seven boxes are over their cap today</strong>, before anyone types anything:</p>
+<ul>
+<li>the homepage's first section heading, at 143 characters against 70</li>
+<li>the cashflow page's headline (90 against 60), two of its section headings and one sub-heading</li>
+<li>the management reporting page's headline (94 against 60) and one sub-heading</li>
+</ul>
+<p>The two headlines are over because each one carries a second, explanatory line inside the same heading. That is a deliberate design, not a mistake — but it is still inside the H1, so the tool counts it. Those pages can still be marked reviewed; see below.</p>
+<h2 id="the-checks-and-who-is-doing-the-checking">The checks, and who is doing the checking</h2>
+<p>Under each page's title is a panel listing <strong>every check Yoast runs</strong> — all 16 search ones and all 6 readability ones — in Yoast's own words, with Yoast's own red, amber and green.</p>
+<p>Nothing here re-implements a Yoast rule. The plugin's own analysis engine, Yoast SEO 28.2, is embedded in this page and actually run, on the page rebuilt with your edits, every time you stop typing for a third of a second.</p>
+<p>One thing to be straight about: <strong>these pages have never been in WordPress</strong>, so Yoast has never seen them and there is no second opinion to compare against. Everything the panel says is Yoast's engine applied to the words the live page serves. It is the same engine, on the same words — but treat a borderline number as borderline.</p>
+<p><strong>What stops a page being ticked off, and what doesn't.</strong> A red blocks a review only when the fix is <em>here</em> — in the headings. The page title, the description, the images and the links are all shown, keep Yoast's red, and are labelled "fix in the component file · never blocks a review". When a page will not tick off, the footer names what it ignored, so a red image row is never mistaken for the reason.</p>
+<p>And it is never a dead end. Every page that will not tick off offers "let me tick it off anyway" — including the pages whose only sticking point is a headline that was already over its cap. Taking that route is recorded in the export as <code>overridden: true</code>, never hidden.</p>
+<h2 id="two-yoast-habits-that-surprise-people">Two Yoast habits that surprise people</h2>
+<ul>
+<li>It counts a match when <strong>every word of the search term turns up in the same sentence</strong>, in any order. "finance director, outsourced" counts for "outsourced finance director".</li>
+<li>It throws away small words first, so <strong>best, new, top, near</strong> never count.</li>
+</ul>
+<h2 id="about-the-search-terms">About the search terms</h2>
+<p>This is the part to read before rewriting a hero, and it is the part where the research is genuinely unfinished. Rather than show a tidy number, each page says what is actually known:</p>
+<div class="table-scroll"><table>
+<thead><tr>
+<th>Page</th>
+<th>Search term</th>
+<th>What is on file</th>
+</tr></thead>
+<tbody>
+<tr><td>Homepage</td><td>—</td><td>No term has been chosen for it. The keyphrase checks are switched off and the page is judged on how it reads.</td></tr>
+<tr><td>Senior Finance Support</td><td>outsourced finance director</td><td>320 searches a month (May 2026). Results page read 9 August 2026 — the cleanest in the study. No measured difficulty.</td></tr>
+<tr><td>13-Week Cashflow Forecast</td><td>cash flow forecasting services uk</td><td>Results page read 9 August 2026, judged worth pursuing. No volume, no difficulty.</td></tr>
+<tr><td>Monthly Management Reporting</td><td>management accounts service london</td><td>Results page read 9 August 2026, rated the strongest of the three. No volume, no difficulty.</td></tr>
+</tbody></table></div>
+<p>Three of the four pages therefore sit in a state of their own — <strong>part-researched</strong> — rather than being shown as verified. The alternative was to borrow a figure from a similar phrase: "cash flow forecast" has 3,600 searches a month on file, and it would have been easy to put that number against "cash flow forecasting services uk". It is a different search. Its number is not that page's number, so it is not shown.</p>
+<p>Sources: <code>_seo-strategy-2026-08-09/target-keywords.json</code> for the terms and the results pages, <code>Pitches/cunos-co-uk-seo-data.json</code> for the one volume figure.</p>
+<h2 id="how-to-use-it">How to use it</h2>
+<ul>
+<li>Click a page in the left list, or press <code>J</code> / <code>K</code> to move.</li>
+<li>Type straight into any box. Edits save themselves in the browser, so you can close the tab and come back.</li>
+<li>"Mark reviewed" ticks the page off and jumps to the next (<code>⌘ Enter</code>).</li>
+<li>When you are done — or part-way, it does not matter — press <strong>Export edits</strong>, then <strong>Copy to clipboard</strong> or <strong>Download .json</strong>, and send that back.</li>
+</ul>
+<p><strong>Nothing you type changes cunos.co.uk.</strong> The site is untouched until someone applies the export and rebuilds it.</p>
+<h2 id="where-your-edits-go">Where your edits go</h2>
+<p>Top right of the bar there is a small badge. It is always telling you the truth about where your work is:</p>
+<div class="table-scroll"><table>
+<thead><tr>
+<th>It says</th>
+<th>What that means</th>
+</tr></thead>
+<tbody>
+<tr><td><strong>Saved 14:32</strong></td><td>In your browser <em>and</em> on our server. Nothing to do.</td></tr>
+<tr><td><strong>Saving…</strong></td><td>On its way. Takes about a second.</td></tr>
+<tr><td><strong>Not saved yet — retrying</strong></td><td>The server did not answer. Your work is safe in this browser and it will keep trying by itself.</td></tr>
+<tr><td><strong>Offline — kept in this browser</strong></td><td>Same, for a dropped connection. It resumes on its own.</td></tr>
+<tr><td><strong>This browser only</strong></td><td>You opened the offline file rather than the link. Edits stay on this machine — press Export when you finish.</td></tr>
+</tbody></table></div>
+<p>Because the saving goes to us rather than to the browser alone, <strong>the link works on more than one device</strong>: start on the laptop, open the same link on your phone, and it carries on where you left off. Whichever one you typed in most recently wins.</p>
+<p>Every version is kept, not just the latest, so a bad paste at eleven o'clock never destroys what was there at five to.</p>
+<p><strong>Treat the link like the document itself.</strong> There is no password — anyone holding that link can edit this review, so please do not forward it.</p>
+<h2 id="what-comes-back-out">What comes back out</h2>
+<p><strong>Export edits</strong> produces one JSON file holding:</p>
+<ul>
+<li>every changed line, with the file it has to land in, the exact text to search for, and how many times that text appears on the page</li>
+<li><code>rules</code> — the caps the editing was done under, and which Yoast version produced the numbers</li>
+<li><code>yoast_checks</code> — per page: both scores, every Yoast result word for word, which of them are fixed elsewhere, which boxes are over their cap, and <code>overridden: true</code> where a page was ticked off past a failing check</li>
+</ul>
+<p>That is enough for whoever applies the edits to check the numbers against the plugin rather than take them on trust.</p>
+<h2 id="rebuilding-it">Rebuilding it</h2>
+<p>Three files sit beside this one and run in this order:</p>
+<ol>
+<li><code>node render_cunos.mjs</code> — opens the four live pages in a browser and caches them in <code>html-cache/</code>. Delete that folder first to force a fresh read. Playwright is borrowed from <code>Websites/Azura Living Bali/node_modules</code>, which is the only checkout in the repo that carries it.</li>
+<li><code>python3 extract_cunos.py</code> — reads the cached pages, finds every heading, traces each line back to its source file, and writes <code>cunos-headings.json</code>.</li>
+<li><code>python3 build_cunos_review.py</code> — writes <code>hero-h2-review.html</code>.</li>
+</ol>
+<p>Then <code>node qa_review_tool.mjs</code> opens the built tool in a browser and checks it works — that the Yoast engine loaded, that typing registers, that nothing runs off the edge of a phone screen. It writes screenshots to <code>.qa/</code>. A clean read of the source proves none of that.</p>
+<p><code>python3 build-html-twins.py</code> regenerates <code>README.html</code> from this file.</p>
+<p><code>./publish.sh</code> copies the built tool and this guide into <code>site/</code> and pushes them to the <code>cunos-copy-review</code> repository, which is what GitHub Pages serves. The autosave endpoint is a separate deploy: <code>cunos-review.php</code> lives with the other endpoint files in <code>Sales/SEO Strategies/DM UK Own Site .../leads-endpoint-source/</code> and goes up as part of that folder's zip. Its store is <code>pplus-store/cunos-review/</code> on the server, above the web root, one file for the latest state and one for the history. The reviewer keys are in <code>_review-keys.txt</code> here, which is deliberately not in any repository — only the SHA-256 of each key is on the server.</p>
+<p>The Yoast engine itself is <strong>not</strong> in this folder. It lives once, at <code>Operations/yoast-live/</code>, and is shared with the DM UK, DM NZ, Husband Retail and CEx review tools.</p>
+<h2 id="one-thing-that-changed-in-the-shared-engine">One thing that changed in the shared engine</h2>
+<p>Building this tool turned up a real bug in that shared engine, and it is fixed there rather than worked around here.</p>
+<p>A page with no search term set — this site's homepage — was being given an SEO score of <strong>−676</strong>. Yoast marks a check it cannot run with a placeholder score rather than by leaving it out (−999 for "no keyphrase set", −50 for density), and Yoast's own averaging then treats those placeholders as scores. In WordPress you never see it, because Yoast refuses to show a score at all until a keyphrase is entered.</p>
+<p>The engine now does the same: no keyphrase, no SEO score, and the chip says "SEO not scored — no keyphrase set" in words. Readability is unaffected, and so is any page that has a keyphrase — none of the other four tools has a page without one, so none of their numbers move.</p>
+<footer class="doc-footer">
+  Generated from <code>README.md</code> by <code>build-html-twins.py</code>. Edit the Markdown, then re-run the script — do not hand-edit this file.
+</footer>
+</main>
+</body>
+</html>
